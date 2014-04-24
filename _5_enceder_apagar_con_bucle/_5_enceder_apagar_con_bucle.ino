@@ -23,12 +23,12 @@ void loop() {
     leds[i] = CRGB::Black;
   }
   FastLED.show();
-  delay(2000);
+  
   
   for(int i = 0; i < NUM_LEDS; i++) {  
     leds[i] = CRGB::Red;
     FastLED.show();
-    //delay(10); 
+    delay(500); 
   }
   //traspasa la memoria a los LEDs
   

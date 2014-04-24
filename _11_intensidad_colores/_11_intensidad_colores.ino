@@ -20,7 +20,7 @@ void setup() {
 void loop() {  
   for(int i = 0; i < NUM_LEDS; i++) { 
     leds[i].r = 255/i; 
-    leds[i].g = 0; 
+    leds[i].g = 255; 
     leds[i].b = 0; 
     FastLED.show();
     //delay(10); 

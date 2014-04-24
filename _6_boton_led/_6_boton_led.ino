@@ -29,6 +29,7 @@ void loop() {
   if (buttonState != lastButtonState) {
     // Si es diferente incrementamos el boton
     if (buttonState == HIGH) {
+      //buttonPushCounter = buttonPushCounter + 1;
       buttonPushCounter++;
       leds[buttonPushCounter] = CRGB::Red; 
       FastLED.show(); 

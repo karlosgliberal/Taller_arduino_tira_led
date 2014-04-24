@@ -43,7 +43,7 @@ void loop() {
     for(int i = 0; i < NUM_LEDS; i++) { 
       leds[i] = CRGB::Black;
       FastLED.show();
-      delay(100);
+      //delay(100);
     }
     buttonPushCounter = 0;
   }
