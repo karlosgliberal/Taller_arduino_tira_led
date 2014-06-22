@@ -7,7 +7,7 @@ CRGB leds[NUM_LEDS];
 
 // Definimos constantes 
 const int  buttonPin = 2;    // definimos el pin2 para el boton
-// Variables will change:
+// Variables que cambiaremos:
 int buttonPushCounter = 0;   // Contador de numero de veces pulado el boton
 int buttonState = 0;         // Estado actual del boton
 int lastButtonState = 0;     // estado anterior del boton
@@ -17,7 +17,7 @@ void setup() {
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
   // Init del boton:
   pinMode(buttonPin, INPUT);
-  //init del puerto serier para ver que ocurre
+  //init del puerto serie para ver que ocurre
   Serial.begin(9600);
 }
 
